@@ -118,4 +118,4 @@ However, for practical workflow, the scripts are organized in this order to enab
 
 
 ## Contact
-Feel free to find me via haoyang.zhang@med.lu.se !
+Feel free to find me via haoyang.zhang@med.lu.se.
