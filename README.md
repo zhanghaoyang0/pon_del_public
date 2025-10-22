@@ -65,13 +65,13 @@ cd pon_del_public
 Note: Theoretically, feature selection `code/train_02_lgbm_featSelect.py` and hyperparameter optimization `code/train_03_lgbm_hyperparaOptimize.py` should be performed after model training and framework comparison `code/train_04_frameworkCompare.py`.
 However, for practical workflow, the scripts are organized in this order to enable all training processes to be executed once.
 
-* **Feature filtering**
+* **Feature filtering**  
   Filters features based on variance threshold, correlation analysis, and binary feature frequency.
   Saves the filtered dataset to `data/data_filteredFeat.csv`.
   ```bash
   python code/train_01_featSelect.py 
   ```
-* **Feature selection**
+* **Feature selection**  
   Selects features using Recursive Feature Elimination (RFE) with LightGBM.
   Based on the performance plot, the top 20 features are selected.
   Saves feature importance to `data/dict_lgbmFeatImp.pkl`.
@@ -83,7 +83,7 @@ However, for practical workflow, the scripts are organized in this order to enab
 <img src="plot/lgbm_nfeatPerf.png" width="800">
 </div>
 
-* **Hyperparameter optimization**
+* **Hyperparameter optimization**  
   Performs Optuna-based tuning for LightGBM parameters.
   Optimization history is saved in `result/lgbm_hyperparaOptimized.csv`.
   The contribution of optimization is minimal.
@@ -94,7 +94,7 @@ However, for practical workflow, the scripts are organized in this order to enab
 <img src="plot/lgbm_optimization.png" width="1000">
 </div>
 
-* **Training and framework comparison**
+* **Training and framework comparison**  
   Runs cross-validation and final training with framework comparison across multiple models:
   LightGBM, Random Forest, Logistic Regression, SVM, MLP, CNN, GRU.
 
@@ -104,7 +104,7 @@ However, for practical workflow, the scripts are organized in this order to enab
 
   Results are saved to `result/performance.csv`, and trained models are stored in `model/`.
 
-* **SHAP analysis**
+* **SHAP analysis**  
   Generates SHAP plots for model interpretation and feature importance analysis.
 
   ```bash
