@@ -2,7 +2,6 @@
 # PON-Del: Predictor for Short Protein Deletions
 
 ## Overview
-
 PON-Del is a machine learning–based predictor for short (1–10 amino acid) sequence-retaining deletions.  
 It was trained on a curated dataset of variants, and several frameworks were evaluated. 
 After comprehensive benchmarking, LightGBM was selected as the final model, demonstrating superior performance compared to other tools.
@@ -116,6 +115,6 @@ However, for practical workflow, the scripts are organized in this order to enab
 </div>
 
 
-
 ## Contact
+Developed by Haoyang Zhang and Muhammad Kabir, supervised by Mauno Vihinen.
 Feel free to find me via haoyang.zhang@med.lu.se.
