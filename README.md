@@ -116,5 +116,5 @@ However, for practical workflow, the scripts are organized in this order to enab
 
 
 ## Contact
-Developed by Haoyang Zhang and Muhammad Kabir, supervised by Mauno Vihinen.
+Developed by Haoyang Zhang and Muhammad Kabir, supervised by Mauno Vihinen.  
 Feel free to find me via haoyang.zhang@med.lu.se.
